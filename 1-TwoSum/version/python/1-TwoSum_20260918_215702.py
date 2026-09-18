@@ -1,0 +1,7 @@
+# Last updated: 9/18/2026, 9:57:02 PM
+1class Solution:
+2    def twoSum(self, nums, target):
+3        for i in range(len(nums)):
+4            for j in range(i + 1, len(nums)):
+5                if nums[i] + nums[j] == target:
+6                    return [i, j]
